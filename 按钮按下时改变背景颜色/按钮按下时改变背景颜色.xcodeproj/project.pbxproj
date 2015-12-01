@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1589B8F1C0D9F730091974F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1589B8E1C0D9F730091974F /* main.m */; };
+		A1589B921C0D9F730091974F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1589B911C0D9F730091974F /* AppDelegate.m */; };
+		A1589B951C0D9F730091974F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1589B941C0D9F730091974F /* ViewController.m */; };
+		A1589B981C0D9F730091974F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1589B961C0D9F730091974F /* Main.storyboard */; };
+		A1589B9A1C0D9F730091974F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1589B991C0D9F730091974F /* Assets.xcassets */; };
+		A1589B9D1C0D9F730091974F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1589B9B1C0D9F730091974F /* LaunchScreen.storyboard */; };
+		A1589BA81C0D9F730091974F /* ___________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1589BA71C0D9F730091974F /* ___________Tests.m */; };
+		A1589BB31C0D9F730091974F /* ___________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1589BB21C0D9F730091974F /* ___________UITests.m */; };
+		A1589BC61C0DAF1F0091974F /* UIButton+Honzon.m in Sources */ = {isa = PBXBuildFile; fileRef = A1589BC51C0DAF1F0091974F /* UIButton+Honzon.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1589BA41C0D9F730091974F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1589B821C0D9F730091974F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1589B891C0D9F730091974F;
+			remoteInfo = "按钮按下时改变背景颜色";
+		};
+		A1589BAF1C0D9F730091974F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1589B821C0D9F730091974F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1589B891C0D9F730091974F;
+			remoteInfo = "按钮按下时改变背景颜色";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1589B8A1C0D9F730091974F /* 按钮按下时改变背景颜色.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "按钮按下时改变背景颜色.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1589B8E1C0D9F730091974F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1589B901C0D9F730091974F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A1589B911C0D9F730091974F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A1589B931C0D9F730091974F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A1589B941C0D9F730091974F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A1589B971C0D9F730091974F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1589B991C0D9F730091974F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1589B9C1C0D9F730091974F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1589B9E1C0D9F730091974F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1589BA31C0D9F730091974F /* 按钮按下时改变背景颜色Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "按钮按下时改变背景颜色Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1589BA71C0D9F730091974F /* ___________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___________Tests.m"; sourceTree = "<group>"; };
+		A1589BA91C0D9F730091974F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1589BAE1C0D9F730091974F /* 按钮按下时改变背景颜色UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "按钮按下时改变背景颜色UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1589BB21C0D9F730091974F /* ___________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___________UITests.m"; sourceTree = "<group>"; };
+		A1589BB41C0D9F730091974F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1589BC41C0DAF1F0091974F /* UIButton+Honzon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Honzon.h"; sourceTree = "<group>"; };
+		A1589BC51C0DAF1F0091974F /* UIButton+Honzon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Honzon.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1589B871C0D9F730091974F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1589BA01C0D9F730091974F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1589BAB1C0D9F730091974F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1589B811C0D9F730091974F = {
+			isa = PBXGroup;
+			children = (
+				A1589B8C1C0D9F730091974F /* 按钮按下时改变背景颜色 */,
+				A1589BA61C0D9F730091974F /* 按钮按下时改变背景颜色Tests */,
+				A1589BB11C0D9F730091974F /* 按钮按下时改变背景颜色UITests */,
+				A1589B8B1C0D9F730091974F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1589B8B1C0D9F730091974F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1589B8A1C0D9F730091974F /* 按钮按下时改变背景颜色.app */,
+				A1589BA31C0D9F730091974F /* 按钮按下时改变背景颜色Tests.xctest */,
+				A1589BAE1C0D9F730091974F /* 按钮按下时改变背景颜色UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1589B8C1C0D9F730091974F /* 按钮按下时改变背景颜色 */ = {
+			isa = PBXGroup;
+			children = (
+				A1589BC31C0DAF1F0091974F /* UIButton+Honzon */,
+				A1589B901C0D9F730091974F /* AppDelegate.h */,
+				A1589B911C0D9F730091974F /* AppDelegate.m */,
+				A1589B931C0D9F730091974F /* ViewController.h */,
+				A1589B941C0D9F730091974F /* ViewController.m */,
+				A1589B961C0D9F730091974F /* Main.storyboard */,
+				A1589B991C0D9F730091974F /* Assets.xcassets */,
+				A1589B9B1C0D9F730091974F /* LaunchScreen.storyboard */,
+				A1589B9E1C0D9F730091974F /* Info.plist */,
+				A1589B8D1C0D9F730091974F /* Supporting Files */,
+			);
+			path = "按钮按下时改变背景颜色";
+			sourceTree = "<group>";
+		};
+		A1589B8D1C0D9F730091974F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1589B8E1C0D9F730091974F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1589BA61C0D9F730091974F /* 按钮按下时改变背景颜色Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A1589BA71C0D9F730091974F /* ___________Tests.m */,
+				A1589BA91C0D9F730091974F /* Info.plist */,
+			);
+			path = "按钮按下时改变背景颜色Tests";
+			sourceTree = "<group>";
+		};
+		A1589BB11C0D9F730091974F /* 按钮按下时改变背景颜色UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1589BB21C0D9F730091974F /* ___________UITests.m */,
+				A1589BB41C0D9F730091974F /* Info.plist */,
+			);
+			path = "按钮按下时改变背景颜色UITests";
+			sourceTree = "<group>";
+		};
+		A1589BC31C0DAF1F0091974F /* UIButton+Honzon */ = {
+			isa = PBXGroup;
+			children = (
+				A1589BC41C0DAF1F0091974F /* UIButton+Honzon.h */,
+				A1589BC51C0DAF1F0091974F /* UIButton+Honzon.m */,
+			);
+			path = "UIButton+Honzon";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1589B891C0D9F730091974F /* 按钮按下时改变背景颜色 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1589BB71C0D9F730091974F /* Build configuration list for PBXNativeTarget "按钮按下时改变背景颜色" */;
+			buildPhases = (
+				A1589B861C0D9F730091974F /* Sources */,
+				A1589B871C0D9F730091974F /* Frameworks */,
+				A1589B881C0D9F730091974F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "按钮按下时改变背景颜色";
+			productName = "按钮按下时改变背景颜色";
+			productReference = A1589B8A1C0D9F730091974F /* 按钮按下时改变背景颜色.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1589BA21C0D9F730091974F /* 按钮按下时改变背景颜色Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1589BBA1C0D9F730091974F /* Build configuration list for PBXNativeTarget "按钮按下时改变背景颜色Tests" */;
+			buildPhases = (
+				A1589B9F1C0D9F730091974F /* Sources */,
+				A1589BA01C0D9F730091974F /* Frameworks */,
+				A1589BA11C0D9F730091974F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1589BA51C0D9F730091974F /* PBXTargetDependency */,
+			);
+			name = "按钮按下时改变背景颜色Tests";
+			productName = "按钮按下时改变背景颜色Tests";
+			productReference = A1589BA31C0D9F730091974F /* 按钮按下时改变背景颜色Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1589BAD1C0D9F730091974F /* 按钮按下时改变背景颜色UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1589BBD1C0D9F730091974F /* Build configuration list for PBXNativeTarget "按钮按下时改变背景颜色UITests" */;
+			buildPhases = (
+				A1589BAA1C0D9F730091974F /* Sources */,
+				A1589BAB1C0D9F730091974F /* Frameworks */,
+				A1589BAC1C0D9F730091974F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1589BB01C0D9F730091974F /* PBXTargetDependency */,
+			);
+			name = "按钮按下时改变背景颜色UITests";
+			productName = "按钮按下时改变背景颜色UITests";
+			productReference = A1589BAE1C0D9F730091974F /* 按钮按下时改变背景颜色UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1589B821C0D9F730091974F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Honzon;
+				TargetAttributes = {
+					A1589B891C0D9F730091974F = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					A1589BA21C0D9F730091974F = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = A1589B891C0D9F730091974F;
+					};
+					A1589BAD1C0D9F730091974F = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = A1589B891C0D9F730091974F;
+					};
+				};
+			};
+			buildConfigurationList = A1589B851C0D9F730091974F /* Build configuration list for PBXProject "按钮按下时改变背景颜色" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1589B811C0D9F730091974F;
+			productRefGroup = A1589B8B1C0D9F730091974F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1589B891C0D9F730091974F /* 按钮按下时改变背景颜色 */,
+				A1589BA21C0D9F730091974F /* 按钮按下时改变背景颜色Tests */,
+				A1589BAD1C0D9F730091974F /* 按钮按下时改变背景颜色UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1589B881C0D9F730091974F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1589B9D1C0D9F730091974F /* LaunchScreen.storyboard in Resources */,
+				A1589B9A1C0D9F730091974F /* Assets.xcassets in Resources */,
+				A1589B981C0D9F730091974F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1589BA11C0D9F730091974F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1589BAC1C0D9F730091974F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1589B861C0D9F730091974F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1589B951C0D9F730091974F /* ViewController.m in Sources */,
+				A1589BC61C0DAF1F0091974F /* UIButton+Honzon.m in Sources */,
+				A1589B921C0D9F730091974F /* AppDelegate.m in Sources */,
+				A1589B8F1C0D9F730091974F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1589B9F1C0D9F730091974F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1589BA81C0D9F730091974F /* ___________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1589BAA1C0D9F730091974F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1589BB31C0D9F730091974F /* ___________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1589BA51C0D9F730091974F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1589B891C0D9F730091974F /* 按钮按下时改变背景颜色 */;
+			targetProxy = A1589BA41C0D9F730091974F /* PBXContainerItemProxy */;
+		};
+		A1589BB01C0D9F730091974F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1589B891C0D9F730091974F /* 按钮按下时改变背景颜色 */;
+			targetProxy = A1589BAF1C0D9F730091974F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1589B961C0D9F730091974F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1589B971C0D9F730091974F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1589B9B1C0D9F730091974F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1589B9C1C0D9F730091974F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1589BB51C0D9F730091974F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A1589BB61C0D9F730091974F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1589BB81C0D9F730091974F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "按钮按下时改变背景颜色/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honzon.-----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A1589BB91C0D9F730091974F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "按钮按下时改变背景颜色/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honzon.-----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A1589BBB1C0D9F730091974F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "按钮按下时改变背景颜色Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honzon.-----------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/按钮按下时改变背景颜色.app/按钮按下时改变背景颜色";
+			};
+			name = Debug;
+		};
+		A1589BBC1C0D9F730091974F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "按钮按下时改变背景颜色Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honzon.-----------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/按钮按下时改变背景颜色.app/按钮按下时改变背景颜色";
+			};
+			name = Release;
+		};
+		A1589BBE1C0D9F730091974F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "按钮按下时改变背景颜色UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honzon.-----------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "按钮按下时改变背景颜色";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A1589BBF1C0D9F730091974F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "按钮按下时改变背景颜色UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honzon.-----------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "按钮按下时改变背景颜色";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1589B851C0D9F730091974F /* Build configuration list for PBXProject "按钮按下时改变背景颜色" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1589BB51C0D9F730091974F /* Debug */,
+				A1589BB61C0D9F730091974F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1589BB71C0D9F730091974F /* Build configuration list for PBXNativeTarget "按钮按下时改变背景颜色" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1589BB81C0D9F730091974F /* Debug */,
+				A1589BB91C0D9F730091974F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1589BBA1C0D9F730091974F /* Build configuration list for PBXNativeTarget "按钮按下时改变背景颜色Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1589BBB1C0D9F730091974F /* Debug */,
+				A1589BBC1C0D9F730091974F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1589BBD1C0D9F730091974F /* Build configuration list for PBXNativeTarget "按钮按下时改变背景颜色UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1589BBE1C0D9F730091974F /* Debug */,
+				A1589BBF1C0D9F730091974F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1589B821C0D9F730091974F /* Project object */;
+}
