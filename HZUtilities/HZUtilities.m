@@ -1,6 +1,6 @@
 //
 //  HZUtilities.m
-//  HZUtilities-Example
+//  HZUtilities
 //
 //  Created by Honzon-0 on 15/12/4.
 //  Copyright © 2015年 Honzon-0. All rights reserved.
