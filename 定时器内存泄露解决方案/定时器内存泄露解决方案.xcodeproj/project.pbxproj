@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1038EAE1C1A654600EECB04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1038EAD1C1A654600EECB04 /* main.m */; };
+		A1038EB11C1A654600EECB04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1038EB01C1A654600EECB04 /* AppDelegate.m */; };
+		A1038EB41C1A654600EECB04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1038EB31C1A654600EECB04 /* ViewController.m */; };
+		A1038EB71C1A654600EECB04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1038EB51C1A654600EECB04 /* Main.storyboard */; };
+		A1038EB91C1A654600EECB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1038EB81C1A654600EECB04 /* Assets.xcassets */; };
+		A1038EBC1C1A654600EECB04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1038EBA1C1A654600EECB04 /* LaunchScreen.storyboard */; };
+		A1038EC71C1A654600EECB04 /* ___________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1038EC61C1A654600EECB04 /* ___________Tests.m */; };
+		A1038ED21C1A654600EECB04 /* ___________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1038ED11C1A654600EECB04 /* ___________UITests.m */; };
+		A1038EE41C1A65D000EECB04 /* HZTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1038EE11C1A65D000EECB04 /* HZTimer.m */; };
+		A1038EE51C1A65D000EECB04 /* HZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1038EE31C1A65D000EECB04 /* HZViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1038EC31C1A654600EECB04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1038EA11C1A654600EECB04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1038EA81C1A654600EECB04;
+			remoteInfo = "定时器内存泄露解决方案";
+		};
+		A1038ECE1C1A654600EECB04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1038EA11C1A654600EECB04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1038EA81C1A654600EECB04;
+			remoteInfo = "定时器内存泄露解决方案";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1038EA91C1A654600EECB04 /* 定时器内存泄露解决方案.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "定时器内存泄露解决方案.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1038EAD1C1A654600EECB04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1038EAF1C1A654600EECB04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A1038EB01C1A654600EECB04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A1038EB21C1A654600EECB04 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A1038EB31C1A654600EECB04 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A1038EB61C1A654600EECB04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1038EB81C1A654600EECB04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1038EBB1C1A654600EECB04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1038EBD1C1A654600EECB04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1038EC21C1A654600EECB04 /* 定时器内存泄露解决方案Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "定时器内存泄露解决方案Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1038EC61C1A654600EECB04 /* ___________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___________Tests.m"; sourceTree = "<group>"; };
+		A1038EC81C1A654600EECB04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1038ECD1C1A654600EECB04 /* 定时器内存泄露解决方案UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "定时器内存泄露解决方案UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1038ED11C1A654600EECB04 /* ___________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___________UITests.m"; sourceTree = "<group>"; };
+		A1038ED31C1A654600EECB04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1038EE01C1A65D000EECB04 /* HZTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZTimer.h; sourceTree = "<group>"; };
+		A1038EE11C1A65D000EECB04 /* HZTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZTimer.m; sourceTree = "<group>"; };
+		A1038EE21C1A65D000EECB04 /* HZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZViewController.h; sourceTree = "<group>"; };
+		A1038EE31C1A65D000EECB04 /* HZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1038EA61C1A654600EECB04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1038EBF1C1A654600EECB04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1038ECA1C1A654600EECB04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1038EA01C1A654600EECB04 = {
+			isa = PBXGroup;
+			children = (
+				A1038EAB1C1A654600EECB04 /* 定时器内存泄露解决方案 */,
+				A1038EC51C1A654600EECB04 /* 定时器内存泄露解决方案Tests */,
+				A1038ED01C1A654600EECB04 /* 定时器内存泄露解决方案UITests */,
+				A1038EAA1C1A654600EECB04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1038EAA1C1A654600EECB04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1038EA91C1A654600EECB04 /* 定时器内存泄露解决方案.app */,
+				A1038EC21C1A654600EECB04 /* 定时器内存泄露解决方案Tests.xctest */,
+				A1038ECD1C1A654600EECB04 /* 定时器内存泄露解决方案UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1038EAB1C1A654600EECB04 /* 定时器内存泄露解决方案 */ = {
+			isa = PBXGroup;
+			children = (
+				A1038EDF1C1A65D000EECB04 /* HZTimer */,
+				A1038EE21C1A65D000EECB04 /* HZViewController.h */,
+				A1038EE31C1A65D000EECB04 /* HZViewController.m */,
+				A1038EAF1C1A654600EECB04 /* AppDelegate.h */,
+				A1038EB01C1A654600EECB04 /* AppDelegate.m */,
+				A1038EB21C1A654600EECB04 /* ViewController.h */,
+				A1038EB31C1A654600EECB04 /* ViewController.m */,
+				A1038EB51C1A654600EECB04 /* Main.storyboard */,
+				A1038EB81C1A654600EECB04 /* Assets.xcassets */,
+				A1038EBA1C1A654600EECB04 /* LaunchScreen.storyboard */,
+				A1038EBD1C1A654600EECB04 /* Info.plist */,
+				A1038EAC1C1A654600EECB04 /* Supporting Files */,
+			);
+			path = "定时器内存泄露解决方案";
+			sourceTree = "<group>";
+		};
+		A1038EAC1C1A654600EECB04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1038EAD1C1A654600EECB04 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1038EC51C1A654600EECB04 /* 定时器内存泄露解决方案Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A1038EC61C1A654600EECB04 /* ___________Tests.m */,
+				A1038EC81C1A654600EECB04 /* Info.plist */,
+			);
+			path = "定时器内存泄露解决方案Tests";
+			sourceTree = "<group>";
+		};
+		A1038ED01C1A654600EECB04 /* 定时器内存泄露解决方案UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1038ED11C1A654600EECB04 /* ___________UITests.m */,
+				A1038ED31C1A654600EECB04 /* Info.plist */,
+			);
+			path = "定时器内存泄露解决方案UITests";
+			sourceTree = "<group>";
+		};
+		A1038EDF1C1A65D000EECB04 /* HZTimer */ = {
+			isa = PBXGroup;
+			children = (
+				A1038EE01C1A65D000EECB04 /* HZTimer.h */,
+				A1038EE11C1A65D000EECB04 /* HZTimer.m */,
+			);
+			path = HZTimer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1038EA81C1A654600EECB04 /* 定时器内存泄露解决方案 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1038ED61C1A654600EECB04 /* Build configuration list for PBXNativeTarget "定时器内存泄露解决方案" */;
+			buildPhases = (
+				A1038EA51C1A654600EECB04 /* Sources */,
+				A1038EA61C1A654600EECB04 /* Frameworks */,
+				A1038EA71C1A654600EECB04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "定时器内存泄露解决方案";
+			productName = "定时器内存泄露解决方案";
+			productReference = A1038EA91C1A654600EECB04 /* 定时器内存泄露解决方案.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1038EC11C1A654600EECB04 /* 定时器内存泄露解决方案Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1038ED91C1A654600EECB04 /* Build configuration list for PBXNativeTarget "定时器内存泄露解决方案Tests" */;
+			buildPhases = (
+				A1038EBE1C1A654600EECB04 /* Sources */,
+				A1038EBF1C1A654600EECB04 /* Frameworks */,
+				A1038EC01C1A654600EECB04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1038EC41C1A654600EECB04 /* PBXTargetDependency */,
+			);
+			name = "定时器内存泄露解决方案Tests";
+			productName = "定时器内存泄露解决方案Tests";
+			productReference = A1038EC21C1A654600EECB04 /* 定时器内存泄露解决方案Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1038ECC1C1A654600EECB04 /* 定时器内存泄露解决方案UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1038EDC1C1A654600EECB04 /* Build configuration list for PBXNativeTarget "定时器内存泄露解决方案UITests" */;
+			buildPhases = (
+				A1038EC91C1A654600EECB04 /* Sources */,
+				A1038ECA1C1A654600EECB04 /* Frameworks */,
+				A1038ECB1C1A654600EECB04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1038ECF1C1A654600EECB04 /* PBXTargetDependency */,
+			);
+			name = "定时器内存泄露解决方案UITests";
+			productName = "定时器内存泄露解决方案UITests";
+			productReference = A1038ECD1C1A654600EECB04 /* 定时器内存泄露解决方案UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1038EA11C1A654600EECB04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Honzon;
+				TargetAttributes = {
+					A1038EA81C1A654600EECB04 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					A1038EC11C1A654600EECB04 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = A1038EA81C1A654600EECB04;
+					};
+					A1038ECC1C1A654600EECB04 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = A1038EA81C1A654600EECB04;
+					};
+				};
+			};
+			buildConfigurationList = A1038EA41C1A654600EECB04 /* Build configuration list for PBXProject "定时器内存泄露解决方案" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1038EA01C1A654600EECB04;
+			productRefGroup = A1038EAA1C1A654600EECB04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1038EA81C1A654600EECB04 /* 定时器内存泄露解决方案 */,
+				A1038EC11C1A654600EECB04 /* 定时器内存泄露解决方案Tests */,
+				A1038ECC1C1A654600EECB04 /* 定时器内存泄露解决方案UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1038EA71C1A654600EECB04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1038EBC1C1A654600EECB04 /* LaunchScreen.storyboard in Resources */,
+				A1038EB91C1A654600EECB04 /* Assets.xcassets in Resources */,
+				A1038EB71C1A654600EECB04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1038EC01C1A654600EECB04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1038ECB1C1A654600EECB04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1038EA51C1A654600EECB04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1038EE51C1A65D000EECB04 /* HZViewController.m in Sources */,
+				A1038EB41C1A654600EECB04 /* ViewController.m in Sources */,
+				A1038EB11C1A654600EECB04 /* AppDelegate.m in Sources */,
+				A1038EAE1C1A654600EECB04 /* main.m in Sources */,
+				A1038EE41C1A65D000EECB04 /* HZTimer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1038EBE1C1A654600EECB04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1038EC71C1A654600EECB04 /* ___________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1038EC91C1A654600EECB04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1038ED21C1A654600EECB04 /* ___________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1038EC41C1A654600EECB04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1038EA81C1A654600EECB04 /* 定时器内存泄露解决方案 */;
+			targetProxy = A1038EC31C1A654600EECB04 /* PBXContainerItemProxy */;
+		};
+		A1038ECF1C1A654600EECB04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1038EA81C1A654600EECB04 /* 定时器内存泄露解决方案 */;
+			targetProxy = A1038ECE1C1A654600EECB04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1038EB51C1A654600EECB04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1038EB61C1A654600EECB04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1038EBA1C1A654600EECB04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1038EBB1C1A654600EECB04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1038ED41C1A654600EECB04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A1038ED51C1A654600EECB04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1038ED71C1A654600EECB04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "定时器内存泄露解决方案/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honzon.-----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A1038ED81C1A654600EECB04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "定时器内存泄露解决方案/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honzon.-----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A1038EDA1C1A654600EECB04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "定时器内存泄露解决方案Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honzon.-----------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/定时器内存泄露解决方案.app/定时器内存泄露解决方案";
+			};
+			name = Debug;
+		};
+		A1038EDB1C1A654600EECB04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "定时器内存泄露解决方案Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honzon.-----------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/定时器内存泄露解决方案.app/定时器内存泄露解决方案";
+			};
+			name = Release;
+		};
+		A1038EDD1C1A654600EECB04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "定时器内存泄露解决方案UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honzon.-----------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "定时器内存泄露解决方案";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A1038EDE1C1A654600EECB04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "定时器内存泄露解决方案UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.honzon.-----------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "定时器内存泄露解决方案";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1038EA41C1A654600EECB04 /* Build configuration list for PBXProject "定时器内存泄露解决方案" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1038ED41C1A654600EECB04 /* Debug */,
+				A1038ED51C1A654600EECB04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1038ED61C1A654600EECB04 /* Build configuration list for PBXNativeTarget "定时器内存泄露解决方案" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1038ED71C1A654600EECB04 /* Debug */,
+				A1038ED81C1A654600EECB04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A1038ED91C1A654600EECB04 /* Build configuration list for PBXNativeTarget "定时器内存泄露解决方案Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1038EDA1C1A654600EECB04 /* Debug */,
+				A1038EDB1C1A654600EECB04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A1038EDC1C1A654600EECB04 /* Build configuration list for PBXNativeTarget "定时器内存泄露解决方案UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1038EDD1C1A654600EECB04 /* Debug */,
+				A1038EDE1C1A654600EECB04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1038EA11C1A654600EECB04 /* Project object */;
+}

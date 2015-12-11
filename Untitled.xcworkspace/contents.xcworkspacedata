@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:&#x5b9a;&#x65f6;&#x5668;&#x5185;&#x5b58;&#x6cc4;&#x9732;&#x89e3;&#x51b3;&#x65b9;&#x6848;/&#x5b9a;&#x65f6;&#x5668;&#x5185;&#x5b58;&#x6cc4;&#x9732;&#x89e3;&#x51b3;&#x65b9;&#x6848;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:HZUtilities-Example/HZUtilities-Example.xcodeproj">
    </FileRef>
    <FileRef
