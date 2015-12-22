@@ -17,6 +17,7 @@
 		A144901D1C113FEC004FFF2F /* HZUtilities_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A144901C1C113FEC004FFF2F /* HZUtilities_ExampleUITests.m */; };
 		A144902D1C114052004FFF2F /* HZUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A144902C1C114052004FFF2F /* HZUtilities.m */; };
 		A14490301C1190BD004FFF2F /* Classic.png in Resources */ = {isa = PBXBuildFile; fileRef = A144902F1C1190BD004FFF2F /* Classic.png */; };
+		A16A77131C293ACC00822346 /* UIButton+Honzon.m in Sources */ = {isa = PBXBuildFile; fileRef = A16A77121C293ACC00822346 /* UIButton+Honzon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		A144902B1C114052004FFF2F /* HZUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZUtilities.h; sourceTree = "<group>"; };
 		A144902C1C114052004FFF2F /* HZUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZUtilities.m; sourceTree = "<group>"; };
 		A144902F1C1190BD004FFF2F /* Classic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Classic.png; sourceTree = "<group>"; };
+		A16A77111C293ACC00822346 /* UIButton+Honzon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Honzon.h"; sourceTree = "<group>"; };
+		A16A77121C293ACC00822346 /* UIButton+Honzon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Honzon.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 		A1448FF61C113FEC004FFF2F /* HZUtilities-Example */ = {
 			isa = PBXGroup;
 			children = (
+				A16A77101C293ACC00822346 /* UIButton+Honzon */,
 				A144902E1C1190BD004FFF2F /* Sources */,
 				A144902A1C114040004FFF2F /* HZUtilities */,
 				A1448FFA1C113FEC004FFF2F /* AppDelegate.h */,
@@ -162,6 +166,15 @@
 				A144902F1C1190BD004FFF2F /* Classic.png */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		A16A77101C293ACC00822346 /* UIButton+Honzon */ = {
+			isa = PBXGroup;
+			children = (
+				A16A77111C293ACC00822346 /* UIButton+Honzon.h */,
+				A16A77121C293ACC00822346 /* UIButton+Honzon.m */,
+			);
+			path = "UIButton+Honzon";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +310,7 @@
 			files = (
 				A1448FFF1C113FEC004FFF2F /* ViewController.m in Sources */,
 				A1448FFC1C113FEC004FFF2F /* AppDelegate.m in Sources */,
+				A16A77131C293ACC00822346 /* UIButton+Honzon.m in Sources */,
 				A144902D1C114052004FFF2F /* HZUtilities.m in Sources */,
 				A1448FF91C113FEC004FFF2F /* main.m in Sources */,
 			);
@@ -522,6 +536,7 @@
 				A14490231C113FEC004FFF2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A14490241C113FEC004FFF2F /* Build configuration list for PBXNativeTarget "HZUtilities-ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +545,7 @@
 				A14490261C113FEC004FFF2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A14490271C113FEC004FFF2F /* Build configuration list for PBXNativeTarget "HZUtilities-ExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +554,7 @@
 				A14490291C113FEC004FFF2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

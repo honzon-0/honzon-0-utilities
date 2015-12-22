@@ -1,6 +1,5 @@
 //
 //  HZUtilities.h
-//  HZUtilities-Example
 //
 //  Created by Honzon-0 on 15/12/4.
 //  Copyright © 2015年 Honzon-0. All rights reserved.
@@ -19,6 +18,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "UIButton+Honzon.h"
 
 @interface HZUtilities : NSObject
 
@@ -65,4 +65,8 @@
 + (void)setCornerView:(UIView *)view borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor cornerRadius:(CGFloat)cornerRadius masksToBounds:(BOOL)masksToBounds;
 //字体 size
 + (CGSize)sizeWithString:(NSString *)string font:(CGFloat)font constrainedToSize:(CGSize)size;
+//从十六进制字符串获取颜色
++ (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
+//默认alpha值为1
++ (UIColor *)colorWithHexString:(NSString *)color;
 @end

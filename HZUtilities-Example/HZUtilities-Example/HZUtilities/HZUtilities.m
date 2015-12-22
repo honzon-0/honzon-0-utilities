@@ -1,6 +1,5 @@
 //
 //  HZUtilities.m
-//  HZUtilities-Example
 //
 //  Created by Honzon-0 on 15/12/4.
 //  Copyright © 2015年 Honzon-0. All rights reserved.
@@ -236,13 +235,6 @@
     return lineView;
 }
 
-//点击手势
-+ (UITapGestureRecognizer *)addTapGestureRecognizerOnView:(UIView *)view Delegate:(id)delegate action:(SEL)action{
-    UITapGestureRecognizer *tapG = [[UITapGestureRecognizer alloc] initWithTarget:delegate action:action];
-    [view addGestureRecognizer:tapG];
-    return tapG;
-}
-
 //自定义混搭颜色的标题label(keywords和 keywordscolor的颜色一一对应)
 +(UILabel *)addLabelChangeColor:(UILabel **)lab AtFrame:(CGRect)frame text:(NSString *)text  textColor:(UIColor *) textColor textFont:(CGFloat)textFont superView:(UIView *)superView keyWords:(NSArray<NSString *> *)keywords keyWordsColor:(NSArray<UIColor *> *)keywordsColor numberOfLines:(NSInteger)numberOfLines
 {
@@ -298,7 +290,7 @@
     }
 }
 
-//图片处理 处理到符合上传大小限制
+//图片处理(压缩) 处理到符合上传大小限制
 +(UIImage *)useImage:(UIImage *)image
 {
     @autoreleasepool {
@@ -400,7 +392,7 @@
 //字体大小自适应宽度
 + (UIFont *)adjustViewSize:(CGSize)size string:(NSString *)string font:(CGFloat)font minFont:(CGFloat)minFont minMargin:(CGFloat)minMargin{
     CGSize roomhallSize = [HZUtilities sizeWithString:string font:font constrainedToSize:size];
-    while ((roomhallSize.width +2*minMargin) >= size.width && font >= minFont) {
+    while ((roomhallSize.width +2*minMargin) >= size.width && font >= minFont && minFont >=0 && font >= 0) {
         font--;
         roomhallSize = [HZUtilities sizeWithString:string font:font constrainedToSize:size];
     }
@@ -410,7 +402,7 @@
 //字体 size
 + (CGSize)sizeWithString:(NSString *)string font:(CGFloat)font constrainedToSize:(CGSize)size{
     
-    if (IOS8DEVICE) {
+    if (IOS7DEVICE) {
         return [string boundingRectWithSize:size
                                     options:NSStringDrawingUsesLineFragmentOrigin
                                  attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:font]}
@@ -436,5 +428,54 @@
     }
 }
 
+//http://my.oschina.net/leejan97/blog/307491
+//从十六进制字符串获取颜色
++ (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha
+{
+    //删除字符串中的空格
+    NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
+    // String should be 6 or 8 characters
+    if ([cString length] < 6){
+        return [UIColor clearColor];
+    }
+    // strip 0X if it appears
+    //如果是0x开头的，那么截取字符串，字符串从索引为2的位置开始，一直到末尾
+    if ([cString hasPrefix:@"0X"]){
+        cString = [cString substringFromIndex:2];
+    }
+    //如果是#开头的，那么截取字符串，字符串从索引为1的位置开始，一直到末尾
+    if ([cString hasPrefix:@"#"]){
+        cString = [cString substringFromIndex:1];
+    }
+    if ([cString length] != 6){
+        return [UIColor clearColor];
+    }
+    
+    // Separate into r, g, b substrings
+    NSRange range;
+    range.location = 0;
+    range.length = 2;
+    //r
+    NSString *rString = [cString substringWithRange:range];
+    //g
+    range.location = 2;
+    NSString *gString = [cString substringWithRange:range];
+    //b
+    range.location = 4;
+    NSString *bString = [cString substringWithRange:range];
+    
+    // Scan values
+    unsigned int r, g, b;
+    [[NSScanner scannerWithString:rString] scanHexInt:&r];
+    [[NSScanner scannerWithString:gString] scanHexInt:&g];
+    [[NSScanner scannerWithString:bString] scanHexInt:&b];
+    return [UIColor colorWithRed:((float)r / 255.0f) green:((float)g / 255.0f) blue:((float)b / 255.0f) alpha:alpha];
+}
+
+//默认alpha值为1
++ (UIColor *)colorWithHexString:(NSString *)color
+{
+    return [self colorWithHexString:color alpha:1.0f];
+}
 
 @end

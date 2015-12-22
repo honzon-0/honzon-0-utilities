@@ -8,5 +8,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIButton (Honzon)
-- (void)setBackgroundColor:(nullable UIColor *)color forState:(UIControlState)state;
+- (void)setBackgroundColor:(UIColor *)color forState:(UIControlState)state;
 @end

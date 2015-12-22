@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    self.view.backgroundColor = [HZUtilities colorWithHexString:@"#fafafa"];
+    
     [self addLabel];
     
     [self addSingleLabel];
@@ -41,11 +43,10 @@
                                 text:text
                       attributedText:nil
                                 font:14
-                           textColor:[UIColor blackColor]
-                       textAlignment:NSTextAlignmentLeft
+                           textColor:[HZUtilities colorWithHexString:@"#333333"]                       textAlignment:NSTextAlignmentLeft
                        lineBreakMode:NSLineBreakByWordWrapping
                        numberOfLines:1
-                     backgroundColor:[UIColor grayColor]];
+                     backgroundColor:[HZUtilities colorWithHexString:@"#e0e0e0"]];
 }
 
 - (void)addSingleLabel{
@@ -54,9 +55,9 @@
                                          frame:CGRectMake(10, 82,50, 40)
                                           text:text
                                       fontSize:14
-                                         color:[UIColor blackColor]
+                                         color:[HZUtilities colorWithHexString:@"#333333"]
                                      alignment:NSTextAlignmentCenter
-                               backgroundColor:[UIColor grayColor]];
+                               backgroundColor:[HZUtilities colorWithHexString:@"#e3e3e3"]];
     
 }
 - (void)addAdaptiveHeightLabel{
@@ -65,9 +66,9 @@
                                              frame:CGRectMake(70, 82,50, 40)
                                               text:text
                                           fontSize:14
-                                             color:[UIColor blackColor]
+                                             color:[HZUtilities colorWithHexString:@"#333333"]
                                          alignment:NSTextAlignmentLeft
-                                   backgroundColor:[UIColor grayColor]];
+                                   backgroundColor:[HZUtilities colorWithHexString:@"#eeeeee"]];
 }
 
 - (void)addLimitedNumberOfLinesLabel{
@@ -76,10 +77,10 @@
                                                    frame:CGRectMake(10, 142,70, 20)
                                                     text:text
                                                 fontSize:14
-                                                   color:[UIColor blackColor]
+                                                   color:[HZUtilities colorWithHexString:@"#333333"]
                                                alignment:NSTextAlignmentLeft
                                            numberOfLines:2
-                                         backgroundColor:[UIColor grayColor]];
+                                         backgroundColor:[HZUtilities colorWithHexString:@"#F7F7F7"]];
 }
 
 #pragma mark UIButton
@@ -87,20 +88,22 @@
     NSString *title = @"TitleButton";
     NSString *selectedTitle = @"TitleButton selected";
     NSString *highlightedTitle = @"addTitleButton highlighted";
-    [HZUtilities addTitleButtonOnSuperView:self.view
+    UIButton *bnt = [HZUtilities addTitleButtonOnSuperView:self.view
                                      frame:CGRectMake(KSCREEN_WIDTH - 140,32 ,130, 40)
                                normalTitle:title
-                               normalColor:[UIColor blackColor]
+                               normalColor:[HZUtilities colorWithHexString:@"#333333"]
                              selectedTitle:selectedTitle
-                             selectedColor:[UIColor greenColor]
+                             selectedColor:[HZUtilities colorWithHexString:@"#9fc7a3"]
                           highlightedTitle:highlightedTitle
-                          highlightedColor:[UIColor blueColor]
+                          highlightedColor:[HZUtilities colorWithHexString:@"#333333"]
                                   fontSize:14
-                           backgroundColor:[UIColor orangeColor]
+                           backgroundColor:[HZUtilities colorWithHexString:@"#ff8000"]
                                        tag:10
                                     target:self
                                     action:@selector(titleButtonClick:)];
+    [bnt setBackgroundColor:[HZUtilities colorWithHexString:@"#b9b6f9"] forState:UIControlStateHighlighted];
 }
+
 
 -(void)titleButtonClick:(UIButton *)button{
     NSLog(@"%@",button.currentTitle);
