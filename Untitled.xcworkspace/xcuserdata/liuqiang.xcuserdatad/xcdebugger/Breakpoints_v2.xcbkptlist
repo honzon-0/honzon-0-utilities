@@ -33,38 +33,6 @@
             endingLineNumber = "158"
             landmarkName = "-removeObserver:"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[HZNotificationCenter removeObserver:]"
-                  moduleName = "HZNotificationCenter"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liuqiangdouble/Desktop/honzon-0-utilities/HZNotificationCenter/HZNotificationCenter/HZNotificationCenter/HZNotificationCenter.m"
-                  timestampString = "472642157.90917"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "158"
-                  endingLineNumber = "158"
-                  offsetFromSymbolStart = "50">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__39-[HZNotificationCenter removeObserver:]_block_invoke"
-                  moduleName = "HZNotificationCenter"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liuqiangdouble/Desktop/honzon-0-utilities/HZNotificationCenter/HZNotificationCenter/HZNotificationCenter/HZNotificationCenter.m"
-                  timestampString = "472642157.909413"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "158"
-                  endingLineNumber = "158"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

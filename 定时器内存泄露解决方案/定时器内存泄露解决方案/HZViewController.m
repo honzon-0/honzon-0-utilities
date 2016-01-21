@@ -21,9 +21,9 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor blueColor];
     self.title = @"定时器";
-    _hzTimer = [HZTimer hzScheduledTimerWithTimeInterval:1.0 target:self selector:@selector(action) userInfo:nil repeats:YES];
+//    _hzTimer = [HZTimer hzScheduledTimerWithTimeInterval:1.0 target:self selector:@selector(action) userInfo:nil repeats:YES];
   
-//    _hzTimer = [HZTimer hzTimerWithTimeInterval:1.0 target:self selector:@selector(action) userInfo:nil repeats:YES];
+    _hzTimer = [HZTimer hzTimerWithTimeInterval:1.0 target:self selector:@selector(action) userInfo:nil repeats:YES];
     
     UIButton *startBnt = [UIButton buttonWithType:UIButtonTypeCustom];
     startBnt.frame =  CGRectMake(self.view.center.x-50, 100, 100, 40);
