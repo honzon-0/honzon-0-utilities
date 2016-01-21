@@ -25,7 +25,7 @@ static const void *weakKey = @"hzTimeWeakKey";
 -(NSDate *)fireDate{
     return self.timer.fireDate;
 }
--(void)fireDate:(NSDate *)fireDate{
+-(void)setFireDate:(NSDate *)fireDate{
     if (![fireDate isEqualToDate:self.timer.fireDate]) {
         self.timer.fireDate = fireDate;
     }
@@ -95,6 +95,7 @@ void timeMethod(id self, SEL _cmd){
         objc_removeAssociatedObjects(self.timerTarget);
     }
     [timer invalidate];
+    timer = nil;
     NSLog(@"%@ dealloc",NSStringFromClass([self class]));
 }
 
