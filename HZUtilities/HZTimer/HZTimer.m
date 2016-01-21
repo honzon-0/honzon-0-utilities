@@ -94,8 +94,8 @@ void timeMethod(id self, SEL _cmd){
     if (timer) {
         objc_removeAssociatedObjects(self.timerTarget);
     }
-    [timer invalidate];
-    timer = nil;
+    [_timer invalidate];
+    _timer = nil;
     NSLog(@"%@ dealloc",NSStringFromClass([self class]));
 }
 
