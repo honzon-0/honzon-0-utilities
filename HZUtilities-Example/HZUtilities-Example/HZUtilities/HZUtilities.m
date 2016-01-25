@@ -478,4 +478,51 @@
     return [self colorWithHexString:color alpha:1.0f];
 }
 
+//将HTML字符串转换为对应富文本
++ (NSAttributedString *)attributedStringWithHTMLString:(NSString *)html {
+    return [[NSAttributedString alloc] initWithData:[html dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+}
+
+#pragma mark - 生成条形码以及二维码
+
+// 参考文档
+// https://developer.apple.com/library/mac/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html
+
++ (UIImage *)generateQRCode:(NSString *)code width:(CGFloat)width height:(CGFloat)height {
+    
+    // 生成二维码图片
+    CIImage *qrcodeImage;
+    NSData *data = [code dataUsingEncoding:NSISOLatin1StringEncoding allowLossyConversion:false];
+    CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+    
+    [filter setValue:data forKey:@"inputMessage"];
+    [filter setValue:@"H" forKey:@"inputCorrectionLevel"];
+    qrcodeImage = [filter outputImage];
+    
+    // 消除模糊
+    CGFloat scaleX = width / qrcodeImage.extent.size.width; // extent 返回图片的frame
+    CGFloat scaleY = height / qrcodeImage.extent.size.height;
+    CIImage *transformedImage = [qrcodeImage imageByApplyingTransform:CGAffineTransformScale(CGAffineTransformIdentity, scaleX, scaleY)];
+    
+    return [UIImage imageWithCIImage:transformedImage];
+}
+
++ (UIImage *)generateBarCode:(NSString *)code width:(CGFloat)width height:(CGFloat)height {
+    // 生成条形码图片
+    CIImage *barcodeImage;
+    NSData *data = [code dataUsingEncoding:NSISOLatin1StringEncoding allowLossyConversion:false];
+    CIFilter *filter = [CIFilter filterWithName:@"CICode128BarcodeGenerator"];
+    
+    [filter setValue:data forKey:@"inputMessage"];
+    barcodeImage = [filter outputImage];
+    
+    // 消除模糊
+    CGFloat scaleX = width / barcodeImage.extent.size.width; // extent 返回图片的frame
+    CGFloat scaleY = height / barcodeImage.extent.size.height;
+    CIImage *transformedImage = [barcodeImage imageByApplyingTransform:CGAffineTransformScale(CGAffineTransformIdentity, scaleX, scaleY)];
+    
+    return [UIImage imageWithCIImage:transformedImage];
+}
+
+
 @end
